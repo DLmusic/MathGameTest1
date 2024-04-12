@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap the Multiples Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcomeScreen">
+        <h1>What number do you want to practice?</h1>
+        <select id="numberSelect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <button id="startButton">LET'S PLAY</button>
+    </div>
+
+    <div id="gameScreen" style="display: none;">
+        <div id="controlPanel">
+            <input type="range" id="tempoSlider" min="60" max="120" value="90">
+            <span id="bpmDisplay">90 BPM</span>
+        </div>
+        <div id="timer">Time Left: 40s</div>
+        <div id="scoreBoard">Score: 0</div>
+        <div id="instruction">Click only multiples of the number: </div>
+        <div id="gameArea"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
